@@ -1,0 +1,33 @@
+<div class="wrapper">
+    <div class="flex">
+        <div class="date-filter">
+            <mat-form-field appearance="fill">
+                <mat-label>From</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>To</mat-label>
+                <input matInput [matDatepicker]="topicker">
+                <mat-datepicker-toggle matSuffix [for]="topicker"></mat-datepicker-toggle>
+                <mat-datepicker #topicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="state-filter">
+            <button mat-raised-button color="primary" class="filter-button">
+                <mat-icon svgIcon="filter" aria-hidden="false"></mat-icon>
+                Filter
+            </button>
+        </div>
+        <div class="search">
+            <mat-form-field appearance="outline">
+                <mat-label>Search</mat-label>
+                <input matInput placeholder="Search">
+                <mat-icon matSuffix>search</mat-icon>
+              </mat-form-field>
+        </div>
+    </div>
+
+
+</div>
